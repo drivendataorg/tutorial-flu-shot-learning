@@ -24,7 +24,7 @@ def download(url):
     if not Path(filename).exists():
         local_filename, headers = urlretrieve(url, filename)
         assert local_filename == filename
-        print("Downloaded")
+        print(f"Downloaded {filename}")
 
     return filename
 
