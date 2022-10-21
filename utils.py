@@ -31,11 +31,13 @@ def download(url):
 
 def download_data_files():
     path = "https://raw.githubusercontent.com/drivendataorg/tutorial-flu-shot-learning/main/data/"
-    filenames = ["training_set_features.csv", 
-                 "training_set_labels.csv", 
-                 "test_set_features.csv", 
-                 "submission_format.csv"]
-    
+    filenames = [
+        "training_set_features.csv",
+        "training_set_labels.csv",
+        "test_set_features.csv",
+        "submission_format.csv",
+    ]
+
     for filename in filenames:
         url = f"{path}/{filename}"
         download(url)
@@ -61,7 +63,7 @@ def decorate(**options):
 
     plt.tight_layout()
 
-    
+
 def crosstab(x, y):
     """Make a cross tabulation and normalize the columns as percentages.
 
@@ -90,7 +92,7 @@ def score_model(model, features_df, labels_df):
     """Compute the average AUC score for the two labels.
 
     Args:
-        model: A fitted Sklearn model
+        model: fitted Scikit-learn model
         features_df: DataFrame of features
         labels_df: DataFrame of labels
 
@@ -109,7 +111,7 @@ def score_model(model, features_df, labels_df):
 
 
 def make_submission(model, test_features_df):
-    """Make a DataFrame ready for submisstion to the competition.
+    """Make a DataFrame ready for submission to the competition.
 
     Args:
         model: fitted Scikit-learn model
@@ -120,4 +122,3 @@ def make_submission(model, test_features_df):
     pred1, pred2 = model.predict_proba(test_features_df)
     d = dict(h1n1_vaccine=pred1.T[1], seasonal_vaccine=pred2.T[1])
     return pd.DataFrame(d, index=test_features_df.index)
-

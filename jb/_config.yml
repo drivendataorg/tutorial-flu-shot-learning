@@ -1,0 +1,14 @@
+title: Flu Shot Learning Tutorial 
+author: Allen Downey
+
+execute:
+  execute_notebooks: 'off'
+
+repository:
+  url: https://github.com/drivendataorg/tutorial-flu-shot-learning
+html:
+  use_repository_button: true
+
+parse:
+  myst_extended_syntax: true
+  
