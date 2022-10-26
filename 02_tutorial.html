@@ -327,6 +327,11 @@ title="Print to PDF"
    Ordinal variables
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -374,6 +379,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ordinal-variables">
    Ordinal variables
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
   </a>
  </li>
 </ul>
@@ -1964,6 +1974,17 @@ Does it make the model more accurate if we treat age and education as ordinal va
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<p>In this lesson we started with the basic model from Lesson 1 and gradually added new features:</p>
+<ul class="simple">
+<li><p>We started by scaling the features, which didn’t have much effect on the results, but it’s a good thing to do before regularizing.</p></li>
+<li><p>We tried three kinds of regularization, using an L2 penalty, and L1 penalty, and a combination of the two called “elastic net”. The goal of regularization is to give less weight – or none – to features that don’t have predictive value, which can reduce the tendency of the model to overfit the training data.</p></li>
+<li><p>Next, we added categorical features to the model and submitted a new set of predictions to the competition site.</p></li>
+<li><p>Finally, you had a chance to work on an exercise to add ordinal features to the model.</p></li>
+</ul>
+<p>So far, all of this has been based on logistic regression. In the next lesson, finally, we will move on to other algorithms, including random forests and gradient boosting.</p>
 </div>
 </div>
 

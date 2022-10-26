@@ -2,7 +2,7 @@
 
 This repository contains Jupyter notebooks and other material for an introduction to machine learning competitions using
 Scikit-learn.
-As a motivating exercise, we will participate in a data science competition hosted by DrivenData, called [Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines](https://www.drivendata.org/competitions/66/flu-shot-learning/).
+As a motivating exercise, we will participate in a competition hosted by DrivenData, called [Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines](https://www.drivendata.org/competitions/66/flu-shot-learning/).
 
 The goal of this competition is to use survey data to predict which people chose to get vaccinated against H1N1,
 which is the influenza virus that caused the [2009 swine flu pandemic](https://en.wikipedia.org/wiki/2009_swine_flu_pandemic).

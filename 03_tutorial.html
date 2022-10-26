@@ -333,6 +333,11 @@ title="Print to PDF"
    Vocabulary
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
+  </a>
+ </li>
 </ul>
 
     </nav>
@@ -385,6 +390,11 @@ title="Print to PDF"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#vocabulary">
    Vocabulary
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summary">
+   Summary
   </a>
  </li>
 </ul>
@@ -1835,7 +1845,15 @@ Wall time: 19.7 s
 In this tutorial, the train-test split test was done for us by the people who set up the competition; then we divided the training data we were given, further, into a training split and a validation split.</p>
 <p>In an attempt to avoid confusion, we used “training data” for all of the data we got and “training split” for the part we split off from the validation split.
 But you are likely to see these terms used interchangeably.</p>
-<p>We hope you have found this tutorial useful. In the near future, we are planning to develop additional tutorials that work with different kinds of data, including images, text, and maybe videos.</p>
+</div>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">#</a></h2>
+<p>In this lesson we explored a new kind of classification algorithm based on random random decision trees. We started with random forests and ended with gradient-boosted trees.</p>
+<p>This lesson starts with the training-test framework from the first two lesson and extends it to a training-validation-test framework. In the context of an online competition, this framework has a practical benefit – because it is faster and easier to test models – and a theoretical benefit – because it avoids overfitting due to leaking information from the test data.</p>
+<p>And we used tools from Scikit-learn that automate common practices in this framework, including k-fold cross-validation and grid search for the best model parameters.</p>
+<p>We hope you have found this tutorial useful.
+At this point, you have a small but powerful set of tools for working with tabular data and generating probablistic predictions.
+In future tutorials, we will explore tools for working with other kinds of data – like text, images, and videos – and generating other kinds of predictions.</p>
 </div>
 </div>
 

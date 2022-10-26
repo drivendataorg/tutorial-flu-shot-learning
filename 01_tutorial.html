@@ -529,15 +529,6 @@ There are four files there: the training features and training labels we will us
 We’ll use Pandas to read the file and put the results in a <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">labels_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;training_set_labels.csv&quot;</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s2">&quot;respondent_id&quot;</span><span class="p">)</span>
 <span class="n">labels_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
@@ -1901,7 +1892,7 @@ The classes are the possible values of <code class="docutils literal notranslate
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/01_tutorial_99_0.png" src="_images/01_tutorial_99_0.png" />
+<img alt="_images/01_tutorial_98_0.png" src="_images/01_tutorial_98_0.png" />
 </div>
 </div>
 <p>For most respondents, the predicted probability is less than 20%. There are only a few respondents whose predicted probabilities exceed 50%.</p>
