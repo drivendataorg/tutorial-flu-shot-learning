@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Predicting Vaccination: Lesson 1 &#8212; Flu Shot Learning Tutorial</title>
+    <title>Lesson 1 &#8212; Flu Shot Learning Tutorial</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -51,7 +51,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Predicting Vaccination: Lesson 2" href="02_tutorial.html" />
+    <link rel="next" title="Lesson 2" href="02_tutorial.html" />
     <link rel="prev" title="Introduction to Data Competitions" href="README.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -110,12 +110,12 @@ const thebe_selector_output = ".output, .cell_output"
         <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Predicting Vaccination: Lesson 1
+   Lesson 1
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="02_tutorial.html">
-   Predicting Vaccination: Lesson 2
+   Lesson 2
   </a>
  </li>
  <li class="toctree-l1">
@@ -298,7 +298,7 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lesson-1">
+  <a class="reference internal nav-link" href="#id1">
    Lesson 1
   </a>
  </li>
@@ -366,7 +366,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Predicting Vaccination: Lesson 1</h1>
+                <h1>Lesson 1</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -377,7 +377,7 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#lesson-1">
+  <a class="reference internal nav-link" href="#id1">
    Lesson 1
   </a>
  </li>
@@ -446,8 +446,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="predicting-vaccination-lesson-1">
-<h1>Predicting Vaccination: Lesson 1<a class="headerlink" href="#predicting-vaccination-lesson-1" title="Permalink to this headline">#</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="lesson-1">
+<h1>Lesson 1<a class="headerlink" href="#lesson-1" title="Permalink to this headline">#</a></h1>
 <p>This is the first of three lessons that introduce the tools and processes of machine learning.
 As an exercise, we will participate in a data science competition hosted by DrivenData, called <a class="reference external" href="https://www.drivendata.org/competitions/66/flu-shot-learning/">Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines</a>.</p>
 <p>The goal of this competition is to use survey data to predict which people chose to get vaccinated against H1N1,
@@ -465,8 +465,8 @@ The primary tools we will use are:</p>
 </ul>
 <p>In the first lesson, we will use a relatively simple algorithm to generate predictions, submit the predictions to the competition site, and get a score.
 In future lessons we’ll explore additional algorithms and take advantage of tools that make it easier to develop models and test predictions.</p>
-<div class="section" id="lesson-1">
-<h2>Lesson 1<a class="headerlink" href="#lesson-1" title="Permalink to this headline">#</a></h2>
+<div class="section" id="id1">
+<h2>Lesson 1<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h2>
 <p>Before we get started, you should sign up for the competition.
 Go to <a class="reference external" href="https://www.drivendata.org/">the DrivenData site</a> and log in or create an account.
 Then go to <a class="reference external" href="https://www.drivendata.org/competitions/66/flu-shot-learning/">the competition page</a> and read the overview.
@@ -503,23 +503,6 @@ There are four files there: the training features and training labels we will us
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 72;
-                var nbb_unformatted_code = "import os\n\nif not os.path.exists('utils.py'):\n    !wget https://raw.githubusercontent.com/drivendataorg/tutorial-flu-shot-learning/main/utils.py";
-                var nbb_formatted_code = "import os\n\nif not os.path.exists(\"utils.py\"):\n    !wget https://raw.githubusercontent.com/drivendataorg/tutorial-flu-shot-learning/main/utils.py";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -529,29 +512,12 @@ There are four files there: the training features and training labels we will us
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 73;
-                var nbb_unformatted_code = "from utils import download_data_files\n\ndownload_data_files()";
-                var nbb_formatted_code = "from utils import download_data_files\n\ndownload_data_files()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s2">&quot;google.colab&quot;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">set_config</span>
-    <span class="n">set_config</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s2">&quot;diagram&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># this won&#39;t be necessary in later versions</span>
+<span class="kn">from</span> <span class="nn">sklearn</span> <span class="kn">import</span> <span class="n">set_config</span>
+<span class="n">set_config</span><span class="p">(</span><span class="n">display</span><span class="o">=</span><span class="s2">&quot;diagram&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -569,23 +535,6 @@ We’ll use Pandas to read the file and put the results in a <code class="docuti
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 3;
-                var nbb_unformatted_code = "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt";
-                var nbb_formatted_code = "import numpy as np\nimport pandas as pd\nimport matplotlib.pyplot as plt";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -650,22 +599,7 @@ We’ll use Pandas to read the file and put the results in a <code class="docuti
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 4;
-                var nbb_unformatted_code = "labels_df = pd.read_csv(\"training_set_labels.csv\", index_col=\"respondent_id\")\nlabels_df.head()";
-                var nbb_formatted_code = "labels_df = pd.read_csv(\"training_set_labels.csv\", index_col=\"respondent_id\")\nlabels_df.head()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>The file contains one row for each respondent and one column for each of the labels. These labels are the <strong>target variables</strong>, that is, the values we are trying to predict.</p>
 <p>The index of the <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> contains numerical IDs for the respondents.</p>
@@ -679,22 +613,7 @@ We’ll use Pandas to read the file and put the results in a <code class="docuti
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(26707, 2)
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 5;
-                var nbb_unformatted_code = "labels_df.shape";
-                var nbb_formatted_code = "labels_df.shape";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>We can use <code class="docutils literal notranslate"><span class="pre">value_counts</span></code> to compute the fraction of respondents who got the H1N1 vaccine.</p>
 <div class="cell docutils container">
@@ -709,22 +628,7 @@ We’ll use Pandas to read the file and put the results in a <code class="docuti
 Name: h1n1_vaccine, dtype: float64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 6;
-                var nbb_unformatted_code = "labels_df[\"h1n1_vaccine\"].value_counts(normalize=True)";
-                var nbb_formatted_code = "labels_df[\"h1n1_vaccine\"].value_counts(normalize=True)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>And the fraction who got the seasonal flu vaccine.</p>
 <div class="cell docutils container">
@@ -739,22 +643,7 @@ Name: h1n1_vaccine, dtype: float64
 Name: seasonal_vaccine, dtype: float64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 7;
-                var nbb_unformatted_code = "labels_df[\"seasonal_vaccine\"].value_counts(normalize=True)";
-                var nbb_formatted_code = "labels_df[\"seasonal_vaccine\"].value_counts(normalize=True)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>About 21% of the respondents got the H1N1 vaccine, and almost 47% got the flu shot.</p>
 <p><strong>Exercise:</strong> What do we get if we run <code class="docutils literal notranslate"><span class="pre">value_counts</span></code> on the whole <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>, rather than one column at a time? How do we interpret the results?</p>
@@ -810,22 +699,7 @@ Name: seasonal_vaccine, dtype: float64
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 8;
-                var nbb_unformatted_code = "# Solution\n\n# It's a cross tabulation (which is clearer if we unstack it)\n# For example, only 3% got the H1N1 vaccine and *not* the seasonal flu vaccine\n\nlabels_df.value_counts(normalize=True).unstack()";
-                var nbb_formatted_code = "# Solution\n\n# It's a cross tabulation (which is clearer if we unstack it)\n# For example, only 3% got the H1N1 vaccine and *not* the seasonal flu vaccine\n\nlabels_df.value_counts(normalize=True).unstack()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 </div>
 <div class="section" id="read-the-features">
@@ -1028,22 +902,7 @@ Name: seasonal_vaccine, dtype: float64
   </tbody>
 </table>
 <p>5 rows × 35 columns</p>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 9;
-                var nbb_unformatted_code = "features_df = pd.read_csv(\"training_set_features.csv\", index_col=\"respondent_id\")\nfeatures_df.head()";
-                var nbb_formatted_code = "features_df = pd.read_csv(\"training_set_features.csv\", index_col=\"respondent_id\")\nfeatures_df.head()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> has one row for each respondent and one column for each of the 35 features.</p>
 <div class="cell docutils container">
@@ -1056,22 +915,7 @@ Name: seasonal_vaccine, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(26707, 35)
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 10;
-                var nbb_unformatted_code = "features_df.shape";
-                var nbb_formatted_code = "features_df.shape";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Again, the index contains IDs for the respondents, which we can use to confirm that the rows in <code class="docutils literal notranslate"><span class="pre">features_df</span></code> line represent the same respondents as the rows in <code class="docutils literal notranslate"><span class="pre">labels_df</span></code>.</p>
 <div class="cell docutils container">
@@ -1084,22 +928,7 @@ Name: seasonal_vaccine, dtype: float64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 11;
-                var nbb_unformatted_code = "(features_df.index == labels_df.index).all()";
-                var nbb_formatted_code = "(features_df.index == labels_df.index).all()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">dtypes</span></code> attribute indicates the data type of each feature.</p>
 <div class="cell docutils container">
@@ -1147,22 +976,7 @@ employment_occupation           object
 dtype: object
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 12;
-                var nbb_unformatted_code = "features_df.dtypes";
-                var nbb_formatted_code = "features_df.dtypes";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Most are <code class="docutils literal notranslate"><span class="pre">float64</span></code>, which means they are floating-point numbers. Some are <code class="docutils literal notranslate"><span class="pre">object</span></code>, which means they could contain any kind of Python object – but as we will see, they are mostly strings.</p>
 <p>Some of the <code class="docutils literal notranslate"><span class="pre">float64</span></code> columns represent actual numbers, like the number of children in the respondent’s household.</p>
@@ -1180,22 +994,7 @@ dtype: object
 Name: household_children, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 13;
-                var nbb_unformatted_code = "features_df[\"household_children\"].value_counts().sort_index()";
-                var nbb_formatted_code = "features_df[\"household_children\"].value_counts().sort_index()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Some are ordinal categorial features represented by integers, like the level of H1N1 concern.</p>
 <div class="cell docutils container">
@@ -1212,22 +1011,7 @@ Name: household_children, dtype: int64
 Name: h1n1_concern, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 14;
-                var nbb_unformatted_code = "features_df[\"h1n1_concern\"].value_counts().sort_index()";
-                var nbb_formatted_code = "features_df[\"h1n1_concern\"].value_counts().sort_index()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Some are unordered categorical features represented by integers, like sex.</p>
 <div class="cell docutils container">
@@ -1242,22 +1026,7 @@ Male      10849
 Name: sex, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 15;
-                var nbb_unformatted_code = "features_df[\"sex\"].value_counts().sort_index()";
-                var nbb_formatted_code = "features_df[\"sex\"].value_counts().sort_index()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Note that in results from <code class="docutils literal notranslate"><span class="pre">value_counts</span></code>, the <code class="docutils literal notranslate"><span class="pre">dtype</span></code> refers to the counts, which are integers, not the values in the feature.</p>
 <p><strong>Exercise:</strong> Compute the value counts of <code class="docutils literal notranslate"><span class="pre">age_group</span></code>. What kind of feature is this (numerical or categorical, ordered or not), and how is it represented?</p>
@@ -1280,22 +1049,7 @@ Name: sex, dtype: int64
 Name: age_group, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 16;
-                var nbb_unformatted_code = "# Solution\n\n# It's a numerical quantity grouped into ordered categories, represented by strings.\n\nfeatures_df[\"age_group\"].value_counts().sort_index()";
-                var nbb_formatted_code = "# Solution\n\n# It's a numerical quantity grouped into ordered categories, represented by strings.\n\nfeatures_df[\"age_group\"].value_counts().sort_index()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 </div>
 <div class="section" id="predictive-value">
@@ -1330,23 +1084,6 @@ somewhat concerned, not very concerned, or not at all concerned?</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 17;
-                var nbb_unformatted_code = "def crosstab(x, y):\n    \"\"\"Make a cross tabulation and normalize the columns as percentages.\n\n    Args:\n        x: sequence of values that go in the index\n        y: sequence of values that go in the columns\n\n    returns: DataFrame\n    \"\"\"\n    return pd.crosstab(x, y, normalize=\"columns\") * 100";
-                var nbb_formatted_code = "def crosstab(x, y):\n    \"\"\"Make a cross tabulation and normalize the columns as percentages.\n\n    Args:\n        x: sequence of values that go in the index\n        y: sequence of values that go in the columns\n\n    returns: DataFrame\n    \"\"\"\n    return pd.crosstab(x, y, normalize=\"columns\") * 100";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1403,22 +1140,7 @@ somewhat concerned, not very concerned, or not at all concerned?</p>
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 18;
-                var nbb_unformatted_code = "crosstab(labels_df[\"h1n1_vaccine\"], features_df[\"h1n1_concern\"])";
-                var nbb_formatted_code = "crosstab(labels_df[\"h1n1_vaccine\"], features_df[\"h1n1_concern\"])";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>Among people who are “not at all concerned” (value 0), only about 13% chose to get vaccinated. Among people who are “very concerned” (value 3), about 29% did. So it seems like this feature has “predictive value”; that is, if we know <code class="docutils literal notranslate"><span class="pre">h1n1_concern</span></code>, we can make a better prediction about vaccination status (as you might have expected).</p>
 <p>Now let’s do the same thing with <code class="docutils literal notranslate"><span class="pre">household_children</span></code>:</p>
@@ -1477,22 +1199,7 @@ somewhat concerned, not very concerned, or not at all concerned?</p>
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 19;
-                var nbb_unformatted_code = "crosstab(labels_df[\"h1n1_vaccine\"], features_df[\"household_children\"])";
-                var nbb_formatted_code = "crosstab(labels_df[\"h1n1_vaccine\"], features_df[\"household_children\"])";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>The fraction of people who got vaccinated is close to 21%, regardless of the number of children in the household.
 It looks like people with 3 children might be slightly less likely to get vaccinated (maybe they don’t have time), but the number of people in this group is relatively small, so this difference might not mean anything.</p>
@@ -1510,22 +1217,7 @@ It looks like people with 3 children might be slightly less likely to get vaccin
 Name: household_children, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 20;
-                var nbb_unformatted_code = "features_df[\"household_children\"].value_counts()";
-                var nbb_formatted_code = "features_df[\"household_children\"].value_counts()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Either way, it looks like this feature doesn’t have much predictive value.</p>
 <p><strong>Exercise:</strong> Explore one or two more features and see if you can find others that seem to have predictive value.</p>
@@ -1578,22 +1270,7 @@ Name: household_children, dtype: int64
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 21;
-                var nbb_unformatted_code = "# Solution\n\ncrosstab(labels_df[\"h1n1_vaccine\"], features_df[\"doctor_recc_h1n1\"])";
-                var nbb_formatted_code = "# Solution\n\ncrosstab(labels_df[\"h1n1_vaccine\"], features_df[\"doctor_recc_h1n1\"])";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <div class="cell tag_hide-cell docutils container">
 <div class="cell_input docutils container">
@@ -1644,22 +1321,7 @@ Name: household_children, dtype: int64
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 22;
-                var nbb_unformatted_code = "# Solution\n\ncrosstab(labels_df[\"h1n1_vaccine\"], features_df[\"health_insurance\"])";
-                var nbb_formatted_code = "# Solution\n\ncrosstab(labels_df[\"h1n1_vaccine\"], features_df[\"health_insurance\"])";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 </div>
 <div class="section" id="fill-missing-values">
@@ -1684,22 +1346,7 @@ The model we will start with is logistic regression, which is a relatively simpl
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>(26707, 23)
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 23;
-                var nbb_unformatted_code = "numeric_features_df = features_df.select_dtypes(include=np.number)\nnumeric_features_df.shape";
-                var nbb_formatted_code = "numeric_features_df = features_df.select_dtypes(include=np.number)\nnumeric_features_df.shape";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>For most features, we are missing some values. For a few of them, we are missing a lot!</p>
 <div class="cell docutils container">
@@ -1735,22 +1382,7 @@ household_children               249
 dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 24;
-                var nbb_unformatted_code = "numeric_features_df.isna().sum()";
-                var nbb_formatted_code = "numeric_features_df.isna().sum()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>To deal with missing data, one option is <strong>imputation</strong>, which means we fill in missing data with values we think are plausible.
 Scikit-learn provides an object called <code class="docutils literal notranslate"><span class="pre">SimpleImputer</span></code> that does this kind of missing value imputation.
@@ -1767,22 +1399,7 @@ In this example, “fitting the data” involves computing the mean of every fea
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-1 {color: black;background-color: white;}#sk-container-id-1 pre{padding: 0;}#sk-container-id-1 div.sk-toggleable {background-color: white;}#sk-container-id-1 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-1 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-1 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-1 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-1 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-1 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-1 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-1 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-1 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-1 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-1 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-1 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-1 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-1 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-1 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-1 div.sk-item {position: relative;z-index: 1;}#sk-container-id-1 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-1 div.sk-item::before, #sk-container-id-1 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-1 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-1 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-1 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-1 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-1 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-1 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-1 div.sk-label-container {text-align: center;}#sk-container-id-1 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-1 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-1" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>SimpleImputer()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-1" type="checkbox" checked><label for="sk-estimator-id-1" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 25;
-                var nbb_unformatted_code = "from sklearn.impute import SimpleImputer\n\nimputer = SimpleImputer(missing_values=np.nan, strategy=\"mean\")\nimputer.fit(numeric_features_df)";
-                var nbb_formatted_code = "from sklearn.impute import SimpleImputer\n\nimputer = SimpleImputer(missing_values=np.nan, strategy=\"mean\")\nimputer.fit(numeric_features_df)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+<div class="output text_html"><style>#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 {color: black;background-color: white;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 pre{padding: 0;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-toggleable {background-color: white;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-estimator:hover {background-color: #d4ebff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-item {z-index: 1;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-parallel-item:only-child::after {width: 0;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-c8f76942-d1c2-464e-89e3-9f5619aa5944 div.sk-text-repr-fallback {display: none;}</style><div id="sk-c8f76942-d1c2-464e-89e3-9f5619aa5944" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>SimpleImputer()</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="bb8f6bf0-ccaa-4d75-929d-1ee0d8f1d6b5" type="checkbox" checked><label for="bb8f6bf0-ccaa-4d75-929d-1ee0d8f1d6b5" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div></div></div></div></div>
 </div>
 <p>Now that the <code class="docutils literal notranslate"><span class="pre">SimpleImputer</span></code> knows the means, we can use it to transform the data.</p>
 <div class="cell docutils container">
@@ -1802,22 +1419,7 @@ In this example, “fitting the data” involves computing the mean of every fea
        [0., 0., 0., ..., 1., 1., 0.]])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 26;
-                var nbb_unformatted_code = "filled = imputer.transform(numeric_features_df)\nfilled";
-                var nbb_formatted_code = "filled = imputer.transform(numeric_features_df)\nfilled";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The result is an array that contains the data from <code class="docutils literal notranslate"><span class="pre">numeric_features_df</span></code> except that the <code class="docutils literal notranslate"><span class="pre">NaN</span></code> values have been replaced with numbers.</p>
 <p>To show the changes, I’ll put the array into a <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code> with the index and columns from <code class="docutils literal notranslate"><span class="pre">numeric_features_df</span></code>.</p>
@@ -1829,23 +1431,6 @@ In this example, “fitting the data” involves computing the mean of every fea
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 27;
-                var nbb_unformatted_code = "filled_df = pd.DataFrame(\n    filled, index=numeric_features_df.index, columns=numeric_features_df.columns\n)";
-                var nbb_formatted_code = "filled_df = pd.DataFrame(\n    filled, index=numeric_features_df.index, columns=numeric_features_df.columns\n)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>We can confirm that there are no missing values in the filled data.</p>
 <div class="cell docutils container">
@@ -1881,22 +1466,7 @@ household_children             0
 dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 28;
-                var nbb_unformatted_code = "filled_df.isna().sum()";
-                var nbb_formatted_code = "filled_df.isna().sum()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>To see the values that got filled in, let’s look at <code class="docutils literal notranslate"><span class="pre">health_insurance</span></code>.
 The mean of the non-missing values is about 0.88.</p>
@@ -1910,22 +1480,7 @@ The mean of the non-missing values is about 0.88.</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8797200859142243
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 29;
-                var nbb_unformatted_code = "features_df[\"health_insurance\"].mean()";
-                var nbb_formatted_code = "features_df[\"health_insurance\"].mean()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>If we look at this column in <code class="docutils literal notranslate"><span class="pre">filled_df</span></code>, we see that it contains <code class="docutils literal notranslate"><span class="pre">0</span></code> or <code class="docutils literal notranslate"><span class="pre">1</span></code> for the cases with known data, and <code class="docutils literal notranslate"><span class="pre">0.88</span></code> where there was missing data.</p>
 <div class="cell docutils container">
@@ -1950,22 +1505,7 @@ The mean of the non-missing values is about 0.88.</p>
 Name: health_insurance, Length: 26707, dtype: float64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 30;
-                var nbb_unformatted_code = "filled_df[\"health_insurance\"]";
-                var nbb_formatted_code = "filled_df[\"health_insurance\"]";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>One way to interpret these imputed values is that they represent probabilities. If we don’t know whether a particular respondent has life insurance, we might say there is an 88% probability they do, based on the proportion of other respondents who do.</p>
 <p><strong>Exercise:</strong> What is the imputed value of <code class="docutils literal notranslate"><span class="pre">h1n1_concern</span></code>, and how would you interpret it?</p>
@@ -1984,22 +1524,7 @@ Name: health_insurance, Length: 26707, dtype: float64
 Name: h1n1_concern, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 31;
-                var nbb_unformatted_code = "filled_df[\"h1n1_concern\"].value_counts()";
-                var nbb_formatted_code = "filled_df[\"h1n1_concern\"].value_counts()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 </div>
 <div class="section" id="making-a-model">
@@ -2015,22 +1540,7 @@ Name: h1n1_concern, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-2 {color: black;background-color: white;}#sk-container-id-2 pre{padding: 0;}#sk-container-id-2 div.sk-toggleable {background-color: white;}#sk-container-id-2 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-2 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-2 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-2 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-2 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-2 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-2 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-2 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-2 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-2 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-2 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-2 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-2 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-2 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-2 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-2 div.sk-item {position: relative;z-index: 1;}#sk-container-id-2 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-2 div.sk-item::before, #sk-container-id-2 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-2 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-2 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-2 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-2 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-2 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-2 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-2 div.sk-label-container {text-align: center;}#sk-container-id-2 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-2 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-2" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-2" type="checkbox" checked><label for="sk-estimator-id-2" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 32;
-                var nbb_unformatted_code = "from sklearn.linear_model import LogisticRegression\n\nmodel = LogisticRegression()\nmodel";
-                var nbb_formatted_code = "from sklearn.linear_model import LogisticRegression\n\nmodel = LogisticRegression()\nmodel";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+<div class="output text_html"><style>#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 {color: black;background-color: white;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 pre{padding: 0;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-toggleable {background-color: white;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-estimator:hover {background-color: #d4ebff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-item {z-index: 1;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-parallel-item:only-child::after {width: 0;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-f4af3dab-6090-4b71-8109-ab437bb7d939 div.sk-text-repr-fallback {display: none;}</style><div id="sk-f4af3dab-6090-4b71-8109-ab437bb7d939" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="2c321373-8a4b-4bea-867a-3f7ce80f95dd" type="checkbox" checked><label for="2c321373-8a4b-4bea-867a-3f7ce80f95dd" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div>
 </div>
 <p>To fit the model to the data, we have to provide the actual labels, which we can get from <code class="docutils literal notranslate"><span class="pre">labels_df</span></code>.</p>
 <div class="cell docutils container">
@@ -2046,22 +1556,7 @@ Name: h1n1_concern, dtype: int64
 Name: h1n1_vaccine, dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 33;
-                var nbb_unformatted_code = "y_true = labels_df[\"h1n1_vaccine\"]\ny_true.value_counts()";
-                var nbb_formatted_code = "y_true = labels_df[\"h1n1_vaccine\"]\ny_true.value_counts()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">y_true</span></code> contains the labels from the training data, which we know are correct.
 Now we can fit the model like this.</p>
@@ -2072,22 +1567,7 @@ Now we can fit the model like this.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-3 {color: black;background-color: white;}#sk-container-id-3 pre{padding: 0;}#sk-container-id-3 div.sk-toggleable {background-color: white;}#sk-container-id-3 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-3 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-3 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-3 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-3 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-3 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-3 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-3 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-3 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-3 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-3 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-3 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-3 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-3 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-3 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-3 div.sk-item {position: relative;z-index: 1;}#sk-container-id-3 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-3 div.sk-item::before, #sk-container-id-3 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-3 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-3 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-3 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-3 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-3 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-3 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-3 div.sk-label-container {text-align: center;}#sk-container-id-3 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-3 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-3" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-3" type="checkbox" checked><label for="sk-estimator-id-3" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 34;
-                var nbb_unformatted_code = "model.fit(filled, y_true)";
-                var nbb_formatted_code = "model.fit(filled, y_true)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+<div class="output text_html"><style>#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab {color: black;background-color: white;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab pre{padding: 0;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-toggleable {background-color: white;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-estimator:hover {background-color: #d4ebff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-item {z-index: 1;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-parallel-item:only-child::after {width: 0;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab div.sk-text-repr-fallback {display: none;}</style><div id="sk-5f15ee31-17c9-4e93-ac39-8dbd1c86b4ab" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>LogisticRegression()</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="b9dec831-61e5-4174-9c77-a4430bb6585c" type="checkbox" checked><label for="b9dec831-61e5-4174-9c77-a4430bb6585c" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div>
 </div>
 <p>The return value from <code class="docutils literal notranslate"><span class="pre">fit</span></code> is the same <code class="docutils literal notranslate"><span class="pre">LogisticRegression</span></code> object, but now it contains the <strong>coefficients</strong> it computed to fit the data. Here’s what they look like.</p>
 <div class="cell docutils container">
@@ -2097,29 +1577,14 @@ Now we can fit the model like this.</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-0.09829457,  0.15465553,  0.1444208 , -0.04637166,  0.18576673,
-         0.00280341, -0.18777014, -0.0183213 ,  0.04275425,  1.9942695 ,
-        -0.50661315,  0.12827418,  0.23467506,  0.73258501,  1.31045508,
-         0.61534922,  0.35163607, -0.01296861,  0.10357481,  0.15628194,
-        -0.08167714,  0.01464805, -0.09577722]])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[-0.09829494,  0.15465565,  0.14442064, -0.04637177,  0.18576658,
+         0.00280365, -0.18776983, -0.01832096,  0.04275457,  1.9942695 ,
+        -0.50661379,  0.12827365,  0.23467494,  0.73258467,  1.31045617,
+         0.61534921,  0.35163616, -0.01296847,  0.10357477,  0.15628207,
+        -0.08167706,  0.01464795, -0.09577733]])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 35;
-                var nbb_unformatted_code = "model.coef_";
-                var nbb_formatted_code = "model.coef_";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>This array contains one coefficient for each feature, which we can see more clearly if we put them into a <code class="docutils literal notranslate"><span class="pre">Series</span></code> with the names of the features.</p>
 <div class="cell docutils container">
@@ -2134,19 +1599,19 @@ h1n1_knowledge                 0.154656
 behavioral_antiviral_meds      0.144421
 behavioral_avoidance          -0.046372
 behavioral_face_mask           0.185767
-behavioral_wash_hands          0.002803
+behavioral_wash_hands          0.002804
 behavioral_large_gatherings   -0.187770
 behavioral_outside_home       -0.018321
-behavioral_touch_face          0.042754
+behavioral_touch_face          0.042755
 doctor_recc_h1n1               1.994270
-doctor_recc_seasonal          -0.506613
+doctor_recc_seasonal          -0.506614
 chronic_med_condition          0.128274
 child_under_6_months           0.234675
 health_worker                  0.732585
-health_insurance               1.310455
+health_insurance               1.310456
 opinion_h1n1_vacc_effective    0.615349
 opinion_h1n1_risk              0.351636
-opinion_h1n1_sick_from_vacc   -0.012969
+opinion_h1n1_sick_from_vacc   -0.012968
 opinion_seas_vacc_effective    0.103575
 opinion_seas_risk              0.156282
 opinion_seas_sick_from_vacc   -0.081677
@@ -2155,22 +1620,7 @@ household_children            -0.095777
 dtype: float64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 36;
-                var nbb_unformatted_code = "pd.Series(model.coef_.flatten(), numeric_features_df.columns)";
-                var nbb_formatted_code = "pd.Series(model.coef_.flatten(), numeric_features_df.columns)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>These coefficients represent weights assigned to each feature.
 By themselves, they are not easy to interpret, for several reasons:</p>
@@ -2196,22 +1646,7 @@ By themselves, they are not easy to interpret, for several reasons:</p>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 0, 0, ..., 0, 0, 0])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 37;
-                var nbb_unformatted_code = "pred = model.predict(filled)\npred";
-                var nbb_formatted_code = "pred = model.predict(filled)\npred";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>For this demonstration, I am generating predictions for the same set of features we used to train the model. This is usually not a good idea, for reasons we’ll see soon. But for now it gives us a quick way to see what the predictions look like.</p>
 <p>I’ll use the following function to count how many times each prediction is generated.</p>
@@ -2230,23 +1665,6 @@ By themselves, they are not easy to interpret, for several reasons:</p>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 38;
-                var nbb_unformatted_code = "def value_counts(seq, **options):\n    \"\"\"Version of value_counts that works with any sequence type.\n\n    Args:\n        seq: sequence\n        options: passed to pd.Series.value_counts\n\n    Returns: pd.Series\n    \"\"\"\n    return pd.Series(seq).value_counts(**options)";
-                var nbb_formatted_code = "def value_counts(seq, **options):\n    \"\"\"Version of value_counts that works with any sequence type.\n\n    Args:\n        seq: sequence\n        options: passed to pd.Series.value_counts\n\n    Returns: pd.Series\n    \"\"\"\n    return pd.Series(seq).value_counts(**options)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2260,22 +1678,7 @@ By themselves, they are not easy to interpret, for several reasons:</p>
 dtype: int64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 39;
-                var nbb_unformatted_code = "value_counts(pred)";
-                var nbb_formatted_code = "value_counts(pred)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -2289,22 +1692,7 @@ dtype: int64
 dtype: float64
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 40;
-                var nbb_unformatted_code = "value_counts(pred, normalize=True) * 100";
-                var nbb_formatted_code = "value_counts(pred, normalize=True) * 100";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>For 87% of the respondents, the model predicts they did not get the H1N1 vaccine; for the other 13%, it predicts that they did.
 To see how good these predictions are, we can see how often the prediction is the same as the actual value.</p>
@@ -2319,22 +1707,7 @@ To see how good these predictions are, we can see how often the prediction is th
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8349121953046018
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 41;
-                var nbb_unformatted_code = "accuracy = (pred == y_true).mean()\naccuracy";
-                var nbb_formatted_code = "accuracy = (pred == y_true).mean()\naccuracy";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>On the face of it, the accuracy of the model is 83%. That might sound good, but it is misleading for two reasons:</p>
 <ol class="simple">
@@ -2352,22 +1725,7 @@ To see how good these predictions are, we can see how often the prediction is th
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2124536638334519
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 42;
-                var nbb_unformatted_code = "y_true.mean()";
-                var nbb_formatted_code = "y_true.mean()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Part of the problem is that we are asking the model to make a <strong>deterministic</strong> prediction; that is, for each respondent, it predicts “yes” or “no”. Predictions like this are hard to evaluate; as this example shows, accuracy alone is not particularly informative. Also, for many practical purposes, deterministic predictions are not particularly useful.
 An alternative is <strong>probablistic</strong> prediction, which computes for each respondent a <em>probability</em> of being vaccinated, rather than a yes/no prediction.</p>
@@ -2380,31 +1738,16 @@ An alternative is <strong>probablistic</strong> prediction, which computes for e
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.97088868, 0.02911132],
-       [0.72674778, 0.27325222],
-       [0.94935071, 0.05064929],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.97088866, 0.02911134],
+       [0.72674757, 0.27325243],
+       [0.94935077, 0.05064923],
        ...,
-       [0.73713147, 0.26286853],
+       [0.73713129, 0.26286871],
        [0.9904698 , 0.0095302 ],
-       [0.86162801, 0.13837199]])
+       [0.86162803, 0.13837197]])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 43;
-                var nbb_unformatted_code = "pred_array = model.predict_proba(filled)\npred_array";
-                var nbb_formatted_code = "pred_array = model.predict_proba(filled)\npred_array";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The result is an array that contains one row for each respondent and one column for each <strong>class</strong>.
 The classes are the possible values of <code class="docutils literal notranslate"><span class="pre">h1n1_vaccine</span></code>:</p>
@@ -2418,22 +1761,7 @@ The classes are the possible values of <code class="docutils literal notranslate
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0, 1])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 44;
-                var nbb_unformatted_code = "model.classes_";
-                var nbb_formatted_code = "model.classes_";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>To see how the results correspond to the respondents and classes, we can put the array into a <code class="docutils literal notranslate"><span class="pre">DataFrame</span></code>.</p>
 <div class="cell docutils container">
@@ -2529,22 +1857,7 @@ The classes are the possible values of <code class="docutils literal notranslate
   </tbody>
 </table>
 <p>26707 rows × 2 columns</p>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 45;
-                var nbb_unformatted_code = "pd.DataFrame(pred_array, index=features_df.index, columns=model.classes_)";
-                var nbb_formatted_code = "pd.DataFrame(pred_array, index=features_df.index, columns=model.classes_)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>According to the model, the respondent with ID <code class="docutils literal notranslate"><span class="pre">0</span></code> has a 97% chance of being in class <code class="docutils literal notranslate"><span class="pre">0</span></code>, which is unvaccinated, and the remaining 3% chance of being in class <code class="docutils literal notranslate"><span class="pre">1</span></code>, which is vaccinated.</p>
 <p>Since the two columns always add up to 1, we don’t really need both of them. We can select the second column, which is the probability of being vaccinated, like this:</p>
@@ -2556,26 +1869,11 @@ The classes are the possible values of <code class="docutils literal notranslate
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.02911132, 0.27325222, 0.05064929, ..., 0.26286853, 0.0095302 ,
-       0.13837199])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.02911134, 0.27325243, 0.05064923, ..., 0.26286871, 0.0095302 ,
+       0.13837197])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 46;
-                var nbb_unformatted_code = "y_pred = pred_array.T[1]\ny_pred";
-                var nbb_formatted_code = "y_pred = pred_array.T[1]\ny_pred";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The average of the probabilities is 0.21, which is close to the actual fraction of the respondents who were vaccinated.</p>
 <div class="cell docutils container">
@@ -2585,25 +1883,10 @@ The classes are the possible values of <code class="docutils literal notranslate
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.21245317548445022
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.2124531946415117
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 47;
-                var nbb_unformatted_code = "y_pred.mean()";
-                var nbb_formatted_code = "y_pred.mean()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The following figure shows the distribution of the predicted probabilities.</p>
 <div class="cell docutils container">
@@ -2619,22 +1902,7 @@ The classes are the possible values of <code class="docutils literal notranslate
 </div>
 <div class="cell_output docutils container">
 <img alt="_images/01_tutorial_99_0.png" src="_images/01_tutorial_99_0.png" />
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 48;
-                var nbb_unformatted_code = "import seaborn as sns\nfrom utils import decorate\n\nsns.kdeplot(y_pred, cut=0)\n\ndecorate(xlabel=\"Predicted probability of vaccination\", ylabel=\"Relative frequency\")";
-                var nbb_formatted_code = "import seaborn as sns\nfrom utils import decorate\n\nsns.kdeplot(y_pred, cut=0)\n\ndecorate(xlabel=\"Predicted probability of vaccination\", ylabel=\"Relative frequency\")";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>For most respondents, the predicted probability is less than 20%. There are only a few respondents whose predicted probabilities exceed 50%.</p>
 </div>
@@ -2658,25 +1926,10 @@ For the competition, the metric that determines the order of the leaderboard is 
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8301287621927045
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8301287538133717
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 49;
-                var nbb_unformatted_code = "from sklearn.metrics import roc_auc_score\n\nscore1 = roc_auc_score(y_true, y_pred)\nscore1";
-                var nbb_formatted_code = "from sklearn.metrics import roc_auc_score\n\nscore1 = roc_auc_score(y_true, y_pred)\nscore1";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>In this example, the AUC score is near 0.83.</p>
 <p>One way to interpret this number is as a <strong>concordance probability</strong>. Suppose we choose two cases at random and generate predictions for both. If the predicted probability is higher for one of the cases, the probability is 83% that we are right, and the actual probability is higher for that case.</p>
@@ -2703,23 +1956,6 @@ We’ll do that soon, but first we have to generate predictions for the other ta
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 50;
-                var nbb_unformatted_code = "numeric_cols = numeric_features_df.columns";
-                var nbb_formatted_code = "numeric_cols = numeric_features_df.columns";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>Previously we used Pandas to select these columns, but an alternative is to use a <code class="docutils literal notranslate"><span class="pre">ColumnTransformer</span></code>:</p>
 <div class="cell docutils container">
@@ -2732,7 +1968,7 @@ We’ll do that soon, but first we have to generate predictions for the other ta
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-4 {color: black;background-color: white;}#sk-container-id-4 pre{padding: 0;}#sk-container-id-4 div.sk-toggleable {background-color: white;}#sk-container-id-4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-4 div.sk-item {position: relative;z-index: 1;}#sk-container-id-4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-4 div.sk-item::before, #sk-container-id-4 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-4 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-4 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-4 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-4 div.sk-label-container {text-align: center;}#sk-container-id-4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
+<div class="output text_html"><style>#sk-00f82b96-424b-48e3-b0fa-786779845177 {color: black;background-color: white;}#sk-00f82b96-424b-48e3-b0fa-786779845177 pre{padding: 0;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-toggleable {background-color: white;}#sk-00f82b96-424b-48e3-b0fa-786779845177 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-00f82b96-424b-48e3-b0fa-786779845177 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-00f82b96-424b-48e3-b0fa-786779845177 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-00f82b96-424b-48e3-b0fa-786779845177 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-estimator:hover {background-color: #d4ebff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-item {z-index: 1;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-parallel-item:only-child::after {width: 0;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-00f82b96-424b-48e3-b0fa-786779845177 div.sk-text-repr-fallback {display: none;}</style><div id="sk-00f82b96-424b-48e3-b0fa-786779845177" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                  Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
@@ -2742,7 +1978,7 @@ We’ll do that soon, but first we have to generate predictions for the other ta
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;))])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-4" type="checkbox" ><label for="sk-estimator-id-4" class="sk-toggleable__label sk-toggleable__label-arrow">ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
+      dtype=&#x27;object&#x27;))])</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="af33f50b-1463-4419-a5cd-0cd28b380dc4" type="checkbox" ><label for="af33f50b-1463-4419-a5cd-0cd28b380dc4" class="sk-toggleable__label sk-toggleable__label-arrow">ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                  Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
@@ -2752,7 +1988,7 @@ We’ll do that soon, but first we have to generate predictions for the other ta
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-5" type="checkbox" ><label for="sk-estimator-id-5" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
+      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="49ca94c0-5492-491b-8041-b7516ba85c51" type="checkbox" ><label for="49ca94c0-5492-491b-8041-b7516ba85c51" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
        &#x27;behavioral_touch_face&#x27;, &#x27;doctor_recc_h1n1&#x27;, &#x27;doctor_recc_seasonal&#x27;,
@@ -2761,22 +1997,7 @@ We’ll do that soon, but first we have to generate predictions for the other ta
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-6" type="checkbox" ><label for="sk-estimator-id-6" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 51;
-                var nbb_unformatted_code = "from sklearn.compose import ColumnTransformer\n\nselector = ColumnTransformer([(\"numeric\", \"passthrough\", numeric_cols)])\nselector";
-                var nbb_formatted_code = "from sklearn.compose import ColumnTransformer\n\nselector = ColumnTransformer([(\"numeric\", \"passthrough\", numeric_cols)])\nselector";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="9860560b-6aa6-4f96-9126-91d3a4b979fb" type="checkbox" ><label for="9860560b-6aa6-4f96-9126-91d3a4b979fb" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div></div></div></div></div>
 </div>
 <p>The argument to <code class="docutils literal notranslate"><span class="pre">ColumnTransformer</span></code> is a list of tuples, although in this example, there is only one tuple in the list. The tuple contains three elements:</p>
 <ul class="simple">
@@ -2799,23 +2020,6 @@ We’ll do that soon, but first we have to generate predictions for the other ta
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 52;
-                var nbb_unformatted_code = "from sklearn.pipeline import Pipeline\n\nmodel = Pipeline(\n    [\n        (\"selector\", selector),\n        (\"imputer\", SimpleImputer(missing_values=np.nan, strategy=\"mean\")),\n        (\"classifier\", LogisticRegression()),\n    ]\n)";
-                var nbb_formatted_code = "from sklearn.pipeline import Pipeline\n\nmodel = Pipeline(\n    [\n        (\"selector\", selector),\n        (\"imputer\", SimpleImputer(missing_values=np.nan, strategy=\"mean\")),\n        (\"classifier\", LogisticRegression()),\n    ]\n)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>The first stage of the pipeline is <code class="docutils literal notranslate"><span class="pre">selector</span></code>, which is the <code class="docutils literal notranslate"><span class="pre">ColumnTransformer</span></code> we just made.
 The second stage is a <code class="docutils literal notranslate"><span class="pre">SimpleImputer</span></code>, which is a transformer that fills missing values.
@@ -2829,7 +2033,7 @@ Like a model, it provides a <code class="docutils literal notranslate"><span cla
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-5 {color: black;background-color: white;}#sk-container-id-5 pre{padding: 0;}#sk-container-id-5 div.sk-toggleable {background-color: white;}#sk-container-id-5 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-5 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-5 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-5 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-5 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-5 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-5 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-5 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-5 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-5 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-5 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-5 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-5 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-5 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-5 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-5 div.sk-item {position: relative;z-index: 1;}#sk-container-id-5 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-5 div.sk-item::before, #sk-container-id-5 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-5 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-5 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-5 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-5 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-5 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-5 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-5 div.sk-label-container {text-align: center;}#sk-container-id-5 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-5 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-5" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
+<div class="output text_html"><style>#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e {color: black;background-color: white;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e pre{padding: 0;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-toggleable {background-color: white;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-estimator:hover {background-color: #d4ebff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-item {z-index: 1;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-parallel-item:only-child::after {width: 0;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-3b061533-49e2-490a-9860-e0e7bccf7c7e div.sk-text-repr-fallback {display: none;}</style><div id="sk-3b061533-49e2-490a-9860-e0e7bccf7c7e" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
                  ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                                   Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
@@ -2842,7 +2046,7 @@ Like a model, it provides a <code class="docutils literal notranslate"><span cla
        &#x27;household_children&#x27;],
       dtype=&#x27;object&#x27;))])),
                 (&#x27;imputer&#x27;, SimpleImputer()),
-                (&#x27;classifier&#x27;, LogisticRegression())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-7" type="checkbox" ><label for="sk-estimator-id-7" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
+                (&#x27;classifier&#x27;, LogisticRegression())])</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="c1763283-04ef-409f-aa42-4133d54b4903" type="checkbox" ><label for="c1763283-04ef-409f-aa42-4133d54b4903" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
                  ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                                   Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
@@ -2855,7 +2059,7 @@ Like a model, it provides a <code class="docutils literal notranslate"><span cla
        &#x27;household_children&#x27;],
       dtype=&#x27;object&#x27;))])),
                 (&#x27;imputer&#x27;, SimpleImputer()),
-                (&#x27;classifier&#x27;, LogisticRegression())])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-8" type="checkbox" ><label for="sk-estimator-id-8" class="sk-toggleable__label sk-toggleable__label-arrow">selector: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
+                (&#x27;classifier&#x27;, LogisticRegression())])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="0c7434ed-c3a1-43b3-87c1-8b344b6393d0" type="checkbox" ><label for="0c7434ed-c3a1-43b3-87c1-8b344b6393d0" class="sk-toggleable__label sk-toggleable__label-arrow">selector: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                  Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
@@ -2865,7 +2069,7 @@ Like a model, it provides a <code class="docutils literal notranslate"><span cla
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-9" type="checkbox" ><label for="sk-estimator-id-9" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
+      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="754d3500-643a-44a7-a0bb-9cabcb3bd049" type="checkbox" ><label for="754d3500-643a-44a7-a0bb-9cabcb3bd049" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
        &#x27;behavioral_touch_face&#x27;, &#x27;doctor_recc_h1n1&#x27;, &#x27;doctor_recc_seasonal&#x27;,
@@ -2874,22 +2078,7 @@ Like a model, it provides a <code class="docutils literal notranslate"><span cla
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-10" type="checkbox" ><label for="sk-estimator-id-10" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-11" type="checkbox" ><label for="sk-estimator-id-11" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-12" type="checkbox" ><label for="sk-estimator-id-12" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 53;
-                var nbb_unformatted_code = "model.fit(features_df, y_true)";
-                var nbb_formatted_code = "model.fit(features_df, y_true)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="2935f550-0b7d-45e4-9d5d-5be4f89068eb" type="checkbox" ><label for="2935f550-0b7d-45e4-9d5d-5be4f89068eb" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="bd9a000c-fd82-4ea3-b8bd-50291f3eb520" type="checkbox" ><label for="bd9a000c-fd82-4ea3-b8bd-50291f3eb520" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="0823b0a5-838c-4da9-98f2-421f11d56ba5" type="checkbox" ><label for="0823b0a5-838c-4da9-98f2-421f11d56ba5" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div></div></div>
 </div>
 <p>When we invoke <code class="docutils literal notranslate"><span class="pre">fit</span></code> on the <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code>, we provide the training data and the training labels.
 The <code class="docutils literal notranslate"><span class="pre">Pipeline</span></code></p>
@@ -2909,31 +2098,16 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.97088868, 0.02911132],
-       [0.72674778, 0.27325222],
-       [0.94935071, 0.05064929],
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([[0.97088866, 0.02911134],
+       [0.72674757, 0.27325243],
+       [0.94935077, 0.05064923],
        ...,
-       [0.73713147, 0.26286853],
+       [0.73713129, 0.26286871],
        [0.9904698 , 0.0095302 ],
-       [0.86162801, 0.13837199]])
+       [0.86162803, 0.13837197]])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 54;
-                var nbb_unformatted_code = "pred_pipeline = model.predict_proba(features_df)\npred_pipeline";
-                var nbb_formatted_code = "pred_pipeline = model.predict_proba(features_df)\npred_pipeline";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>Again, the result has one column for each class, but we only need the second column, which is the predicted probability that each respondent got the H1N1 vaccine.</p>
 <div class="cell docutils container">
@@ -2942,23 +2116,6 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 55;
-                var nbb_unformatted_code = "y_pred_pipeline = pred_pipeline.T[1]";
-                var nbb_formatted_code = "y_pred_pipeline = pred_pipeline.T[1]";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>We can confirm that the results we get from the pipeline are the same as what we computed step by step.</p>
 <div class="cell docutils container">
@@ -2971,22 +2128,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 56;
-                var nbb_unformatted_code = "np.allclose(y_pred, y_pred_pipeline)";
-                var nbb_formatted_code = "np.allclose(y_pred, y_pred_pipeline)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>And compute the AUC score again.</p>
 <div class="cell docutils container">
@@ -2997,25 +2139,10 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8301287621927045
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8301287538133717
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 57;
-                var nbb_unformatted_code = "score1 = roc_auc_score(y_true, y_pred_pipeline)\nscore1";
-                var nbb_formatted_code = "score1 = roc_auc_score(y_true, y_pred_pipeline)\nscore1";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>To make a model for the seasonal vaccine, we’ll make another pipeline, just like the first.</p>
 <div class="cell docutils container">
@@ -3030,23 +2157,6 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 58;
-                var nbb_unformatted_code = "model2 = Pipeline(\n    [\n        (\"selector\", selector),\n        (\"imputer\", SimpleImputer(missing_values=np.nan, strategy=\"mean\")),\n        (\"classifier\", LogisticRegression()),\n    ]\n)";
-                var nbb_formatted_code = "model2 = Pipeline(\n    [\n        (\"selector\", selector),\n        (\"imputer\", SimpleImputer(missing_values=np.nan, strategy=\"mean\")),\n        (\"classifier\", LogisticRegression()),\n    ]\n)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>And train it with the <code class="docutils literal notranslate"><span class="pre">seasonal_vaccine</span></code> labels.</p>
 <div class="cell docutils container">
@@ -3057,7 +2167,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_html"><style>#sk-container-id-6 {color: black;background-color: white;}#sk-container-id-6 pre{padding: 0;}#sk-container-id-6 div.sk-toggleable {background-color: white;}#sk-container-id-6 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-container-id-6 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-container-id-6 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-container-id-6 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-container-id-6 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-container-id-6 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-container-id-6 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-container-id-6 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-container-id-6 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-container-id-6 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-container-id-6 div.sk-estimator:hover {background-color: #d4ebff;}#sk-container-id-6 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-container-id-6 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-container-id-6 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: 0;}#sk-container-id-6 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;position: relative;}#sk-container-id-6 div.sk-item {position: relative;z-index: 1;}#sk-container-id-6 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;position: relative;}#sk-container-id-6 div.sk-item::before, #sk-container-id-6 div.sk-parallel-item::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 0;bottom: 0;left: 50%;z-index: -1;}#sk-container-id-6 div.sk-parallel-item {display: flex;flex-direction: column;z-index: 1;position: relative;background-color: white;}#sk-container-id-6 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-container-id-6 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-container-id-6 div.sk-parallel-item:only-child::after {width: 0;}#sk-container-id-6 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;}#sk-container-id-6 div.sk-label label {font-family: monospace;font-weight: bold;display: inline-block;line-height: 1.2em;}#sk-container-id-6 div.sk-label-container {text-align: center;}#sk-container-id-6 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-container-id-6 div.sk-text-repr-fallback {display: none;}</style><div id="sk-container-id-6" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
+<div class="output text_html"><style>#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 {color: black;background-color: white;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 pre{padding: 0;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-toggleable {background-color: white;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 label.sk-toggleable__label {cursor: pointer;display: block;width: 100%;margin-bottom: 0;padding: 0.3em;box-sizing: border-box;text-align: center;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 label.sk-toggleable__label-arrow:before {content: "▸";float: left;margin-right: 0.25em;color: #696969;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 label.sk-toggleable__label-arrow:hover:before {color: black;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-estimator:hover label.sk-toggleable__label-arrow:before {color: black;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-toggleable__content {max-height: 0;max-width: 0;overflow: hidden;text-align: left;background-color: #f0f8ff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-toggleable__content pre {margin: 0.2em;color: black;border-radius: 0.25em;background-color: #f0f8ff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 input.sk-toggleable__control:checked~div.sk-toggleable__content {max-height: 200px;max-width: 100%;overflow: auto;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 input.sk-toggleable__control:checked~label.sk-toggleable__label-arrow:before {content: "▾";}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-estimator input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-label input.sk-toggleable__control:checked~label.sk-toggleable__label {background-color: #d4ebff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 input.sk-hidden--visually {border: 0;clip: rect(1px 1px 1px 1px);clip: rect(1px, 1px, 1px, 1px);height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;width: 1px;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-estimator {font-family: monospace;background-color: #f0f8ff;border: 1px dotted black;border-radius: 0.25em;box-sizing: border-box;margin-bottom: 0.5em;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-estimator:hover {background-color: #d4ebff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel-item::after {content: "";width: 100%;border-bottom: 1px solid gray;flex-grow: 1;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-label:hover label.sk-toggleable__label {background-color: #d4ebff;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-serial::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-serial {display: flex;flex-direction: column;align-items: center;background-color: white;padding-right: 0.2em;padding-left: 0.2em;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-item {z-index: 1;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel {display: flex;align-items: stretch;justify-content: center;background-color: white;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel::before {content: "";position: absolute;border-left: 1px solid gray;box-sizing: border-box;top: 2em;bottom: 0;left: 50%;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel-item {display: flex;flex-direction: column;position: relative;background-color: white;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel-item:first-child::after {align-self: flex-end;width: 50%;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel-item:last-child::after {align-self: flex-start;width: 50%;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-parallel-item:only-child::after {width: 0;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-dashed-wrapped {border: 1px dashed gray;margin: 0 0.4em 0.5em 0.4em;box-sizing: border-box;padding-bottom: 0.4em;background-color: white;position: relative;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-label label {font-family: monospace;font-weight: bold;background-color: white;display: inline-block;line-height: 1.2em;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-label-container {position: relative;z-index: 2;text-align: center;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-container {/* jupyter's `normalize.less` sets `[hidden] { display: none; }` but bootstrap.min.css set `[hidden] { display: none !important; }` so we also need the `!important` here to be able to override the default hidden behavior on the sphinx rendered scikit-learn.org. See: https://github.com/scikit-learn/scikit-learn/issues/21755 */display: inline-block !important;position: relative;}#sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4 div.sk-text-repr-fallback {display: none;}</style><div id="sk-2b61967d-fcd9-4bbf-b245-27de1fcbf6c4" class="sk-top-container"><div class="sk-text-repr-fallback"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
                  ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                                   Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
@@ -3070,7 +2180,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
        &#x27;household_children&#x27;],
       dtype=&#x27;object&#x27;))])),
                 (&#x27;imputer&#x27;, SimpleImputer()),
-                (&#x27;classifier&#x27;, LogisticRegression())])</pre><b>In a Jupyter environment, please rerun this cell to show the HTML representation or trust the notebook. <br />On GitHub, the HTML representation is unable to render, please try loading this page with nbviewer.org.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-13" type="checkbox" ><label for="sk-estimator-id-13" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
+                (&#x27;classifier&#x27;, LogisticRegression())])</pre><b>Please rerun this cell to show the HTML repr or trust the notebook.</b></div><div class="sk-container" hidden><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="ed2df477-a803-4c46-8ffe-e83f839387bf" type="checkbox" ><label for="ed2df477-a803-4c46-8ffe-e83f839387bf" class="sk-toggleable__label sk-toggleable__label-arrow">Pipeline</label><div class="sk-toggleable__content"><pre>Pipeline(steps=[(&#x27;selector&#x27;,
                  ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                                   Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
@@ -3083,7 +2193,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
        &#x27;household_children&#x27;],
       dtype=&#x27;object&#x27;))])),
                 (&#x27;imputer&#x27;, SimpleImputer()),
-                (&#x27;classifier&#x27;, LogisticRegression())])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-14" type="checkbox" ><label for="sk-estimator-id-14" class="sk-toggleable__label sk-toggleable__label-arrow">selector: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
+                (&#x27;classifier&#x27;, LogisticRegression())])</pre></div></div></div><div class="sk-serial"><div class="sk-item sk-dashed-wrapped"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="35699416-41f5-4734-8bc5-2441dc8c88a9" type="checkbox" ><label for="35699416-41f5-4734-8bc5-2441dc8c88a9" class="sk-toggleable__label sk-toggleable__label-arrow">selector: ColumnTransformer</label><div class="sk-toggleable__content"><pre>ColumnTransformer(transformers=[(&#x27;numeric&#x27;, &#x27;passthrough&#x27;,
                                  Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
@@ -3093,7 +2203,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-15" type="checkbox" ><label for="sk-estimator-id-15" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
+      dtype=&#x27;object&#x27;))])</pre></div></div></div><div class="sk-parallel"><div class="sk-parallel-item"><div class="sk-item"><div class="sk-label-container"><div class="sk-label sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="2c7ae3b9-a390-4266-839b-cf778916291d" type="checkbox" ><label for="2c7ae3b9-a390-4266-839b-cf778916291d" class="sk-toggleable__label sk-toggleable__label-arrow">numeric</label><div class="sk-toggleable__content"><pre>Index([&#x27;h1n1_concern&#x27;, &#x27;h1n1_knowledge&#x27;, &#x27;behavioral_antiviral_meds&#x27;,
        &#x27;behavioral_avoidance&#x27;, &#x27;behavioral_face_mask&#x27;, &#x27;behavioral_wash_hands&#x27;,
        &#x27;behavioral_large_gatherings&#x27;, &#x27;behavioral_outside_home&#x27;,
        &#x27;behavioral_touch_face&#x27;, &#x27;doctor_recc_h1n1&#x27;, &#x27;doctor_recc_seasonal&#x27;,
@@ -3102,22 +2212,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
        &#x27;opinion_h1n1_sick_from_vacc&#x27;, &#x27;opinion_seas_vacc_effective&#x27;,
        &#x27;opinion_seas_risk&#x27;, &#x27;opinion_seas_sick_from_vacc&#x27;, &#x27;household_adults&#x27;,
        &#x27;household_children&#x27;],
-      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-16" type="checkbox" ><label for="sk-estimator-id-16" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-17" type="checkbox" ><label for="sk-estimator-id-17" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="sk-estimator-id-18" type="checkbox" ><label for="sk-estimator-id-18" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 59;
-                var nbb_unformatted_code = "y_true2 = labels_df[\"seasonal_vaccine\"]\nmodel2.fit(features_df, y_true2)";
-                var nbb_formatted_code = "y_true2 = labels_df[\"seasonal_vaccine\"]\nmodel2.fit(features_df, y_true2)";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+      dtype=&#x27;object&#x27;)</pre></div></div></div><div class="sk-serial"><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="531520ea-ccda-4308-95ae-bfe1d8fd276a" type="checkbox" ><label for="531520ea-ccda-4308-95ae-bfe1d8fd276a" class="sk-toggleable__label sk-toggleable__label-arrow">passthrough</label><div class="sk-toggleable__content"><pre>passthrough</pre></div></div></div></div></div></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="8b9b2888-38b2-475b-9fbe-1f789d51dfb5" type="checkbox" ><label for="8b9b2888-38b2-475b-9fbe-1f789d51dfb5" class="sk-toggleable__label sk-toggleable__label-arrow">SimpleImputer</label><div class="sk-toggleable__content"><pre>SimpleImputer()</pre></div></div></div><div class="sk-item"><div class="sk-estimator sk-toggleable"><input class="sk-toggleable__control sk-hidden--visually" id="4749070b-d190-472c-a1d8-981489d8c32c" type="checkbox" ><label for="4749070b-d190-472c-a1d8-981489d8c32c" class="sk-toggleable__label sk-toggleable__label-arrow">LogisticRegression</label><div class="sk-toggleable__content"><pre>LogisticRegression()</pre></div></div></div></div></div></div></div></div></div>
 </div>
 <p>Now we can generate predictions.</p>
 <div class="cell docutils container">
@@ -3132,22 +2227,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
        0.25375547])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 60;
-                var nbb_unformatted_code = "y_pred2 = model2.predict_proba(features_df).T[1]\ny_pred2";
-                var nbb_formatted_code = "y_pred2 = model2.predict_proba(features_df).T[1]\ny_pred2";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>And compute an AUC score.</p>
 <div class="cell docutils container">
@@ -3161,22 +2241,7 @@ The <code class="docutils literal notranslate"><span class="pre">Pipeline</span>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0.8329128480430075
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 61;
-                var nbb_unformatted_code = "score2 = roc_auc_score(y_true2, y_pred2)\nscore2";
-                var nbb_formatted_code = "score2 = roc_auc_score(y_true2, y_pred2)\nscore2";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>The AUC score is about the same as for the H1N1 vaccine.</p>
 </div>
@@ -3382,22 +2447,7 @@ In the context of the competition, <code class="docutils literal notranslate"><s
   </tbody>
 </table>
 <p>5 rows × 35 columns</p>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 62;
-                var nbb_unformatted_code = "test_features_df = pd.read_csv(\"test_set_features.csv\", index_col=\"respondent_id\")\ntest_features_df.head()";
-                var nbb_formatted_code = "test_features_df = pd.read_csv(\"test_set_features.csv\", index_col=\"respondent_id\")\ntest_features_df.head()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>We’ll use the first model to generate predictions for the H1N1 vaccine.</p>
 <div class="cell docutils container">
@@ -3408,26 +2458,11 @@ In the context of the competition, <code class="docutils literal notranslate"><s
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.13489332, 0.02351712, 0.36902103, ..., 0.20900412, 0.04917522,
-       0.63990209])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.13489335, 0.02351709, 0.36902136, ..., 0.20900421, 0.04917523,
+       0.63990223])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 63;
-                var nbb_unformatted_code = "test_pred1 = model.predict_proba(test_features_df).T[1]\ntest_pred1";
-                var nbb_formatted_code = "test_pred1 = model.predict_proba(test_features_df).T[1]\ntest_pred1";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>And the second model to generate predictions for the seasonal flu vaccine.</p>
 <div class="cell docutils container">
@@ -3438,26 +2473,11 @@ In the context of the competition, <code class="docutils literal notranslate"><s
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.43785045, 0.05749332, 0.61969265, ..., 0.40580782, 0.29943891,
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([0.43785044, 0.05749332, 0.61969265, ..., 0.40580782, 0.29943892,
        0.64489359])
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 64;
-                var nbb_unformatted_code = "test_pred2 = model2.predict_proba(test_features_df).T[1]\ntest_pred2";
-                var nbb_formatted_code = "test_pred2 = model2.predict_proba(test_features_df).T[1]\ntest_pred2";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>This example demonstrates the benefits of using pipelines. First, they are convenient. Once we have trained a model, we can generate predictions with a single line of code. More importantly, they encapsulate every step of the process, including selection and imputation. As a result, they help prevent errors that would be more likely if we had to copy and paste the code.</p>
 <p>To submit these predictions on the competition site, we have to write a CSV file in the right format. The provided file <code class="docutils literal notranslate"><span class="pre">submission_format.csv</span></code> shows what it should look like.</p>
@@ -3524,22 +2544,7 @@ In the context of the competition, <code class="docutils literal notranslate"><s
     </tr>
   </tbody>
 </table>
-</div></div><script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 65;
-                var nbb_unformatted_code = "submission_df = pd.read_csv(\"submission_format.csv\", index_col=\"respondent_id\")\nsubmission_df.head()";
-                var nbb_formatted_code = "submission_df = pd.read_csv(\"submission_format.csv\", index_col=\"respondent_id\")\nsubmission_df.head()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div></div></div>
 </div>
 <p>When we loaded <code class="docutils literal notranslate"><span class="pre">training_set_features.csv</span></code>, you might remember that we checked that the respondents in the index are the same as the ones in <code class="docutils literal notranslate"><span class="pre">training_set_labels.csv</span></code>.
 Similarly, let’s check that the respondents in <code class="docutils literal notranslate"><span class="pre">submission_format.csv</span></code> are the same as the ones in <code class="docutils literal notranslate"><span class="pre">test_set_features.csv</span></code>.</p>
@@ -3553,22 +2558,7 @@ Similarly, let’s check that the respondents in <code class="docutils literal n
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>True
 </pre></div>
 </div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 66;
-                var nbb_unformatted_code = "(submission_df.index == test_features_df.index).all()";
-                var nbb_formatted_code = "(submission_df.index == test_features_df.index).all()";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
+</div>
 </div>
 <p>We can store the predictions in <code class="docutils literal notranslate"><span class="pre">submission_df</span></code> like this:</p>
 <div class="cell docutils container">
@@ -3578,23 +2568,6 @@ Similarly, let’s check that the respondents in <code class="docutils literal n
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 67;
-                var nbb_unformatted_code = "submission_df[\"h1n1_vaccine\"] = test_pred1\nsubmission_df[\"seasonal_vaccine\"] = test_pred2";
-                var nbb_formatted_code = "submission_df[\"h1n1_vaccine\"] = test_pred1\nsubmission_df[\"seasonal_vaccine\"] = test_pred2";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>And use Pandas to write the predictions to a CSV file.</p>
 <div class="cell docutils container">
@@ -3603,23 +2576,6 @@ Similarly, let’s check that the respondents in <code class="docutils literal n
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 68;
-                var nbb_unformatted_code = "submission_df.to_csv(\"submission1.csv\")";
-                var nbb_formatted_code = "submission_df.to_csv(\"submission1.csv\")";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>Here’s what the format looks like.</p>
 <div class="cell docutils container">
@@ -3630,59 +2586,18 @@ Similarly, let’s check that the respondents in <code class="docutils literal n
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>respondent_id,h1n1_vaccine,seasonal_vaccine
-26707,0.13489332286123842,0.43785044620541824
-26708,0.023517123870275356,0.05749331633120994
-26709,0.36902103409768083,0.6196926544840226
-26710,0.47419725782335354,0.801404663442776
-26711,0.31718574516111986,0.6457667851597925
-26712,0.4335702372438129,0.8956160851396447
-26713,0.24605220789245197,0.2999614665345645
-26714,0.1254505287768857,0.24409029267792037
-26715,0.028511544337873732,0.13501014793736704
-</pre></div>
-</div>
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 69;
-                var nbb_unformatted_code = "!head submission1.csv";
-                var nbb_formatted_code = "!head submission1.csv";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="s2">&quot;google.colab&quot;</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">modules</span><span class="p">:</span>
-    <span class="kn">from</span> <span class="nn">google.colab</span> <span class="kn">import</span> <span class="n">files</span>
-    <span class="n">files</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="s2">&quot;submission1.csv&quot;</span><span class="p">)</span>
+26707,0.13489334671523973,0.437850444269809
+26708,0.023517088466908788,0.05749331641249102
+26709,0.3690213624059212,0.6196926518118399
+26710,0.4741970765807566,0.8014046599607151
+26711,0.3171858690900654,0.6457667797571401
+26712,0.43357037097949813,0.8956160847424255
+26713,0.24605223330386922,0.29996146612306546
+26714,0.12545052415532,0.2440902908757473
+26715,0.02851156608782157,0.13501014787759547
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<script type="application/javascript">
-            setTimeout(function() {
-                var nbb_cell_id = 70;
-                var nbb_unformatted_code = "import sys\nif 'google.colab' in sys.modules:\n    from google.colab import files\n    files.download('submission1.csv')";
-                var nbb_formatted_code = "import sys\n\nif \"google.colab\" in sys.modules:\n    from google.colab import files\n\n    files.download(\"submission1.csv\")";
-                var nbb_cells = Jupyter.notebook.get_cells();
-                for (var i = 0; i < nbb_cells.length; ++i) {
-                    if (nbb_cells[i].input_prompt_number == nbb_cell_id) {
-                        if (nbb_cells[i].get_text() == nbb_unformatted_code) {
-                             nbb_cells[i].set_text(nbb_formatted_code);
-                        }
-                        break;
-                    }
-                }
-            }, 500);
-            </script></div>
 </div>
 <p>If we submit these predictions to the platform, we get a single score, which is the average of the AUC scores for the two target variables.</p>
 <p>The score for these predictions is 0.8204, which is not quite as good as the score we got when we tested the model on the same data it was trained with. That’s to be expected.
@@ -3739,7 +2654,7 @@ The we repeated the process with a <code class="docutils literal notranslate"><s
     <a class='right-next' id="next-link" href="02_tutorial.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Predicting Vaccination: Lesson 2</p>
+        <p class="prev-next-title">Lesson 2</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
